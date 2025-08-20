@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Test Kitap",
+        "author": "Yazar",
+        "isbn": "12345"
+    },
+    {
+        "title": "Kitap 1",
+        "author": "Yazar",
+        "isbn": "111"
+    },
+    {
+        "title": "Kitap 2",
+        "author": "Yazar",
+        "isbn": "222"
+    },
+    {
+        "title": "Test Kitap",
+        "author": "Yazar",
+        "isbn": "12345"
+    },
+    {
+        "title": "Kitap 1",
+        "author": "Yazar",
+        "isbn": "111"
+    },
+    {
+        "title": "Kitap 2",
+        "author": "Yazar",
+        "isbn": "222"
+    }
+]

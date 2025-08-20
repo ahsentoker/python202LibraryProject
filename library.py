@@ -53,14 +53,17 @@ class Library:
                 authors = book_data.get("authors", [])
                 if authors:
                     author_raw = authors[0]["name"]
-                    # sadece isim ve soyisim al
                     author = ' '.join(author_raw.split()[:2])
                     author = unidecode(author)
                 else:
                     author = "Bilinmeyen Yazar"
-                self.add_book(Book(title, author, isbn))
+                new_book = Book(title, author, isbn)
+                self.add_book(new_book)
                 print(f"Kitap eklendi: {title} by {author} (ISBN: {isbn})")
+                return new_book  # Burada döndür
             else:
                 print("Kitap bilgisi API'de bulunamadı.")
+                return None
         except Exception as e:
             print(f"API isteği başarısız: {e}")
+            return None
